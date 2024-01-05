@@ -1,6 +1,4 @@
 from django.db import models
-from django.utils import timezone
-
 class TruncatingTextField(models.TextField):
     def __init__(self, *args, **kwargs):
         self.truncate_at = kwargs.pop('truncate_at', 40)
@@ -32,7 +30,6 @@ class PortfolioItem(models.Model):
 
     def __str__(self):
         return self.title
-
 
 class AboutMe(models.Model):
     content = models.TextField()
