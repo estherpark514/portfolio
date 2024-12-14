@@ -11,15 +11,20 @@ const Header = () => {
       </div>
 
       <nav className="flex flex-wrap space-x-6">
-        <Link to="/about" className="text-2xl text-black hover:underline">
+        <Link to="/" className="text-2xl text-black hover:underline">
           About
         </Link>
-        <Link to="/work" className="text-2xl text-black hover:underline">
-          Work
+        <Link to="/projects" className="text-2xl text-black hover:underline">
+          Projects
         </Link>
-        <Link to="/resume" className="text-2xl text-black hover:underline">
+        <a
+          href="https://drive.google.com/file/d/1_zCR_9_ftAO-h4kev8YLHGuNjvEpdk9r/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-2xl text-black hover:underline"
+        >
           Resume
-        </Link>
+        </a>
       </nav>
     </header>
   );

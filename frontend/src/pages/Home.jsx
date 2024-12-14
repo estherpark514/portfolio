@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("English");
@@ -64,9 +65,10 @@ const Home = () => {
           <p className="text-lg mb-4">
             <strong>Personally,</strong> I have lived in three countries: the
             United States, South Korea, and Egypt. My journey has taken me
-            through five major cities: Detroit, MI; Seoul, Korea; Cairo, Egypt;
-            Atlanta, GA; and Louisville, KY. Each place has shaped my global
-            perspective and enriched my understanding of diverse cultures.
+            through six major cities: Detroit, MI; Seoul, Korea; Cairo, Egypt;
+            Songdo, Korea; Atlanta, GA; and Louisville, KY. Each place has
+            shaped my global perspective and enriched my understanding of
+            diverse cultures.
           </p>
           <p className="text-lg">
             <strong>Professionally,</strong> my passion for cybersecurity stems
@@ -84,12 +86,79 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="text-center text-bold mt-8 mb-4">
-        <div className="italic text-3xl text-left text-bold">
-          "Driven by Heart, Proven by Action"
+      <div className="text-2xl text-left font-bold mt-8 mb-4">
+        "Securing, Building, and Innovating the Digital World"
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <div className="bg-green-100 rounded-lg p-6 shadow-md flex flex-col justify-between">
+          <div>
+            <h2 className="text-xl font-bold mb-4">Cybersecurity</h2>
+            <p className="text-lg">
+              Relevant skill sets:
+              <ul className="list-disc list-inside mt-2">
+                <li>Risk Management</li>
+                <li>Governance, Risk, and Compliance (GRC)</li>
+                <li>Password Behavior Analysis</li>
+                <li>Network Security</li>
+              </ul>
+            </p>
+          </div>
+          <Link
+            to="/projects#cybersecurity"
+            className="py-2 px-4 bg-gray-100 rounded-lg hover:bg-gray-200 flex justify-center items-center mt-4 w-28"
+          >
+            Learn More
+          </Link>
+        </div>
+
+        <div className="bg-red-100 rounded-lg p-6 shadow-md flex flex-col justify-between">
+          <div>
+            <h2 className="text-xl font-bold mb-4">Web Development</h2>
+            <p className="text-lg">
+              Relevant skill sets:
+              <ul className="list-disc list-inside mt-2">
+                <li>Django REST framework</li>
+                <li>MongoDB</li>
+                <li>Express</li>
+                <li>React</li>
+                <li>Node.js</li>
+              </ul>
+            </p>
+          </div>
+          <Link
+            to="/projects#web-development"
+            className="py-2 px-4 bg-gray-100 rounded-lg hover:bg-gray-200 flex justify-center items-center mt-4 w-28"
+          >
+            Learn More
+          </Link>
+        </div>
+
+        <div className="bg-purple-100 rounded-lg p-6 shadow-md flex flex-col justify-between">
+          <div>
+            <h2 className="text-xl font-bold mb-4">Machine Learning</h2>
+            <p className="text-lg">
+              Relevant skill sets:
+              <ul className="list-disc list-inside mt-2">
+                <li>Anomaly Detection</li>
+                <li>Logistic Regression</li>
+                <li>Gradient Boosting</li>
+                <li>Random Forest</li>
+              </ul>
+            </p>
+          </div>
+          <Link
+            to="/projects#ml"
+            className="py-2 px-4 bg-gray-100 rounded-lg hover:bg-gray-200 flex justify-center items-center mt-4 w-28"
+          >
+            Learn More
+          </Link>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <div className="text-2xl text-left font-bold mt-8 mb-4">
+        "Driven by Heart, Proven by Action"
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-8 gap-8">
         <div className="bg-yellow-100 rounded-lg p-6 shadow-md">
           <h2 className="text-xl font-bold mb-4">Translation</h2>
           <div className="flex gap-4 mb-4">
@@ -133,10 +202,12 @@ const Home = () => {
           </div>
 
           <div className="bg-pink-100 rounded-lg p-6 shadow-md">
-            <h2 className="text-xl font-bold mb-4">Service Club</h2>
+            <h2 className="text-xl font-bold mb-4">Service Projects</h2>
             <p className="text-lg">
-              Actively participating in community service projects to make a
-              positive impact.
+              From three years with African Hope Donation to two years producing
+              Braille books, crowdfunding for Ukrainian refugees, and supporting
+              animal care, I’ve actively contributed to diverse service
+              projects.
             </p>
           </div>
         </div>
