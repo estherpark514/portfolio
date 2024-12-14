@@ -10,12 +10,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Workflow dispatch event that pushes the current version to the release branch.
-      # From here the secondary production deployment workflow will trigger to build the dependencies.
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
       - name: Deploy 🚀
         uses: estherpark514/github-pages-deploy-action@v4
         with:
           branch: releases/v4
-          folder: .
+          folder: dist
           clean: false
           single-commit: true
