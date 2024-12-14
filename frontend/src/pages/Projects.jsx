@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Projects = () => {
+  useEffect(() => {
+    // Scroll to the top of the page when this component is mounted
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="py-6 px-20">
       <h1 className="text-5xl font-bold text-center text-gray-800 mb-12">

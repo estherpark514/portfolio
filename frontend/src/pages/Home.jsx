@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("English");
@@ -50,6 +51,7 @@ const Home = () => {
         return null;
     }
   };
+  const navigate = useNavigate();
   return (
     <div className="py-6 px-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -86,8 +88,8 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="text-2xl text-left font-bold mt-8 mb-4">
-        "Securing, Building, and Innovating the Digital World"
+      <div className="flex justify-between items-center text-2xl text-left font-bold mt-8 mb-4">
+        <span>"Securing, Building, and Innovating the Digital World"</span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
         <div className="bg-green-100 rounded-lg p-6 shadow-md flex flex-col justify-between">
@@ -103,12 +105,12 @@ const Home = () => {
               </ul>
             </p>
           </div>
-          <Link
+          {/* <Link
             to="/projects#cybersecurity"
             className="py-2 px-4 bg-gray-100 rounded-lg hover:bg-gray-200 flex justify-center items-center mt-4 w-28"
           >
             Learn More
-          </Link>
+          </Link> */}
         </div>
 
         <div className="bg-red-100 rounded-lg p-6 shadow-md flex flex-col justify-between">
@@ -125,12 +127,12 @@ const Home = () => {
               </ul>
             </p>
           </div>
-          <Link
+          {/* <Link
             to="/projects#web-development"
             className="py-2 px-4 bg-gray-100 rounded-lg hover:bg-gray-200 flex justify-center items-center mt-4 w-28"
           >
             Learn More
-          </Link>
+          </Link> */}
         </div>
 
         <div className="bg-purple-100 rounded-lg p-6 shadow-md flex flex-col justify-between">
@@ -146,15 +148,22 @@ const Home = () => {
               </ul>
             </p>
           </div>
-          <Link
+          {/* <Link
             to="/projects#ml"
             className="py-2 px-4 bg-gray-100 rounded-lg hover:bg-gray-200 flex justify-center items-center mt-4 w-28"
           >
             Learn More
-          </Link>
+          </Link> */}
         </div>
       </div>
-
+      <div className="flex justify-end mt-8">
+        <button
+          onClick={() => navigate("/projects")}
+          className="flex items-center gap-2 text-lg font-medium text-gray-600 hover:text-gray-800 transition-all duration-300 transform hover:translate-x-2"
+        >
+          >> View More
+        </button>
+      </div>
       <div className="text-2xl text-left font-bold mt-8 mb-4">
         "Driven by Heart, Proven by Action"
       </div>
