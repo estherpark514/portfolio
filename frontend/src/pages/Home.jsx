@@ -142,9 +142,7 @@ const Home = () => {
               Relevant skill sets:
               <ul className="list-disc list-inside mt-2">
                 <li>Anomaly Detection</li>
-                <li>Logistic Regression</li>
-                <li>Gradient Boosting</li>
-                <li>Random Forest</li>
+                <li>Supervised Learning</li>
               </ul>
             </p>
           </div>
