@@ -61,7 +61,7 @@ I’m constantly looking to improve my portfolio and add more features. If you h
 
 For any inquiries or collaborations, you can reach me at:
 - Email: esther514514@gmail.com
-- LinkedIn: [Esther Park](https://www.linkedin.com/in/estherpark/)
+- LinkedIn: [Esther Park](https://www.linkedin.com/in/estherpark514/)
 
 Thank you for visiting my portfolio repository!
 
