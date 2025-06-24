@@ -26,10 +26,11 @@ const Projects = () => {
               Risk Dashboard
             </h3>
             <p className="text-gray-700 mb-6" style={{ minHeight: "100px" }}>
-              Developed a{" "}
-              <strong className="text-black-800 underline">Power BI</strong>{" "}
-              dashboard for Humana, Inc., tracking vendor risk levels (high,
-              medium, low) for 8000+ vendors.
+              Developed an interactive dashboard for Humana, Inc., using{" "}
+              <strong className="text-black-800 underline">React.js</strong>,{" "}
+              <strong className="text-black-800 underline">Taillwind CSS</strong>,{" "} and {" "}
+              <strong className="text-black-800 underline">Recharts</strong>{" "}
+              to visualize and track high, medium, and low risk levels across 8,000+ vendors.
             </p>
             <p className="text-black font-semibold mb-2">What I Did:</p>
             <p className="text-gray-700">

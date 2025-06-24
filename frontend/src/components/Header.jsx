@@ -10,7 +10,7 @@ const Header = () => {
         </Link>
       </div>
 
-      <nav className="flex flex-wrap space-x-6">
+      {/* <nav className="flex flex-wrap space-x-6">
         <Link to="/" className="text-2xl text-black hover:underline">
           About
         </Link>
@@ -25,7 +25,7 @@ const Header = () => {
         >
           Resume
         </a>
-      </nav>
+      </nav> */}
     </header>
   );
 };
