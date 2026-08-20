@@ -163,8 +163,7 @@ const Home = () => {
                   fabs.
                 </li>
                 <li>
-                  Scaled data delivery to{" "} <strong>5,000+</strong>
-                  cross-functional engineers, automating multi-source data
+                  Scaled data delivery to{" "} <strong>5,000+</strong> cross-functional engineers, automating multi-source data
                   harmonization to drive proactive defect mitigation and support
                   an estimated{" "} <strong>3-5%</strong> increase in operational
                   throughput.
