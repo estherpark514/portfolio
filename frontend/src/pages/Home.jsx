@@ -277,7 +277,7 @@ const Home = () => {
                 className="text-2xl font-semibold text-black flex items-center"
                 style={{ minHeight: "70px" }}
               >
-                Cybersecurity-Aware Website Developer
+                Website Developer
               </h3>
               {/* <img
                 src={CoCLogo}
