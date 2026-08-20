@@ -158,8 +158,7 @@ const Home = () => {
                 </li>
                 <li>
                   Engineered TSMC’s Fault Detection and Classification (FDC)
-                  monitoring platform for the{" "} <strong>inaugural N3/N4 mixed-run production</strong>
-                  N3/N4 mixed-run production, establishing the operational
+                  monitoring platform for the{" "} <strong>inaugural N3/N4 mixed-run production</strong> N3/N4 mixed-run production, establishing the operational
                   benchmark and analytics framework for all future multi-node
                   fabs.
                 </li>
