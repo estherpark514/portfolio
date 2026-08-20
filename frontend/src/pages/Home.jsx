@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import HumanaLogo from "../assets/humana-logo.png";
 import TargetLogo from "../assets/Target-Logo.png";
 import Typewriter from "typewriter-effect";
+import TSMClogo from "../assets/TSMC-logo.svg";
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("English");
@@ -72,7 +73,7 @@ const Home = () => {
                   .typeString("Hi, I am Esther.")
                   .pauseFor(1000)
                   .typeString(
-                    "<br/>A third-year undergraduate student at <strong>Georgia Tech</strong>, specializing in <strong>Cybersecurity</strong> and <strong>Artificial Intelligence</strong>."
+                    "<br/>A third-year undergraduate student at <strong>Georgia Tech</strong>, specializing in <strong>Cybersecurity</strong> and <strong>Artificial Intelligence</strong>.",
                   )
                   .pauseFor(4000)
                   .start();
@@ -126,6 +127,56 @@ const Home = () => {
           <div className="bg-transparent border border-green-500 p-6 rounded-lg shadow-md">
             <div className="flex justify-between items-center">
               <h3 className="text-2xl font-semibold text-black">
+                Fault Detection and Classification (FDC) System for N3/N4 Mixing
+                Run
+              </h3>
+              <img
+                src={TSMCLogo}
+                alt="TSMC Logo"
+                className="h-16 w-auto object-contain"
+              />
+            </div>
+            <p className="italic mb-1">
+              Taiwan Semiconductor Manufacturing Company (TSMC)
+            </p>
+            <p className="mb-8">Jun 2026 - Aug 2026</p>
+
+            <p className="text-gray-700 mb-4" style={{ minHeight: "300px" }}>
+              Developed backend services and observability dashboards for
+              Target’s enterprise smart lock initiative, supporting physical
+              access control and infrastructure security monitoring across
+              retail locations.
+              <br />
+              <br />
+              <strong>Key Contributions:</strong>
+              <ul className="list-disc list-inside mt-2 space-y-2">
+                <li>
+                  Architected an automated ETL data pipeline using{" "}
+                  <strong>SQL</strong> and <strong>Python</strong> to extract,
+                  validate, and aggregate high-volume equipment telemetry and
+                  sensor logs across distributed 300mm manufacturing fabs.
+                </li>
+                <li>
+                  Engineered TSMC’s Fault Detection and Classification (FDC)
+                  monitoring platform for the{" "} <strong>inaugural N3/N4 mixed-run production</strong>
+                  N3/N4 mixed-run production, establishing the operational
+                  benchmark and analytics framework for all future multi-node
+                  fabs.
+                </li>
+                <li>
+                  Scaled data delivery to{" "} <strong>5,000+</strong>
+                  cross-functional engineers, automating multi-source data
+                  harmonization to drive proactive defect mitigation and support
+                  an estimated{" "} <strong>3-5%</strong> increase in operational
+                  throughput.
+                </li>
+              </ul>
+            </p>
+          </div>
+
+          <div className="bg-transparent border border-green-500 p-6 rounded-lg shadow-md">
+            <div className="flex justify-between items-center">
+              <h3 className="text-2xl font-semibold text-black">
                 Smart Lock Monitoring & Security Analytics
               </h3>
               <img
@@ -167,7 +218,9 @@ const Home = () => {
               </ul>
             </p>
           </div>
+        </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20">
           <div className="bg-transparent border border-green-500 p-6 rounded-lg shadow-md">
             <div className="flex justify-between items-center">
               <h3 className="text-2xl font-semibold text-black">
