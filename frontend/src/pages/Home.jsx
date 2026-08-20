@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import HumanaLogo from "../assets/humana-logo.png";
 import TargetLogo from "../assets/Target-Logo.png";
 import Typewriter from "typewriter-effect";
-import TSMClogo from "../assets/TSMC-logo.svg";
+import TSMCLogo from "../assets/TSMC-logo.svg";
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("English");
